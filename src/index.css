@@ -1,0 +1,309 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('./assets/font/AvenirLTStd-Black.woff2') format('woff2'),
+    url('./assets/font/AvenirLTStd-Black.woff') format('woff'),
+    url('./assets/font/AvenirLTStd-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('./assets/font/AvenirLTStd-Roman.woff2') format('woff2'),
+    url('./assets/font/AvenirLTStd-Roman.woff') format('woff'),
+    url('./assets/font/AvenirLTStd-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('./assets/font/AvenirLTStd-Book.woff2') format('woff2'),
+    url('./assets/font/AvenirLTStd-Book.woff') format('woff'),
+    url('./assets/font/AvenirLTStd-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.main-bg {
+  background: linear-gradient(166.28deg, #000000 13.12%, #1A1A1A 93.9%);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-bg::before {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  inset: 0;
+  content: url(./assets/images/heading-main-bg.svg);
+}
+
+.main-bg::after {
+  /* position: absolute;
+  width: 575.62px;
+  content: "";
+  height: 912.59px;
+  left: 241px;
+  top: 742.97px;
+  background: #41A5EE;
+  filter: blur(350px);
+  transform: rotate(-14.55deg); */
+  position: absolute;
+  width: 507.62px;
+  content: "";
+  height: 388.59px;
+  left: 241px;
+  top: 689.97px;
+  background: #41A5EE;
+  filter: blur(302px);
+  transform: rotate(-14.55deg);
+
+
+}
+
+.whiteborder {
+  background: -moz-linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 30px;
+  padding: 1px;
+}
+
+.moduleborder {
+  background: #2C2C2C;
+  height: 100%;
+  /* border-image: linear-gradient(45deg, red , yellow); */
+  /* border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0) 100%); */
+
+}
+
+.tec-bg {
+  background: url(./assets/images/tec-bg.png);
+  background-size: 167%;
+  /* transform: scale(1.2); */
+  background-position: center;
+}
+
+@media (max-width:768px) {
+  .tec-bg {
+    background: url(./assets/images/tec-bg.png);
+    background-size: cover;
+    /* transform: scale(1.2); */
+    background-position: center;
+  }
+}
+
+@media (min-width:1440px) {
+  .tec-bg {
+    background: url(./assets/images/tec-bg.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.text-border {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: #fff;
+  letter-spacing: 0.04em;
+  transition: all 0.5s;
+
+}
+
+.text-border:hover {
+  color: #000000;
+}
+
+.discode-right {
+  background: url(./assets/images/discodeImage.png);
+
+}
+
+.blog-left::after {
+  position: absolute;
+  content: " ";
+  inset: 0;
+  background: url(./assets/images/Group480957801.svg);
+}
+
+.features::after {
+  /* content: "";
+  position: absolute;
+  width: 400.44px;
+  height: 500.93px;
+  left: 182.18px;
+  top: 10px;
+
+  background: #41A5EE;
+  filter: blur(375px);
+  transform: rotate(-92.21deg); */
+  content: "";
+  position: absolute;
+  width: 77.44px;
+  height: 286.93px;
+  left: 367.18px;
+  top: 117px;
+  background: #41A5EE;
+  filter: blur(155px);
+  transform: rotate(-92.21deg);
+}
+
+.bg-shadow::after {
+  content: "";
+  position: absolute;
+  width: 463.44px;
+  height: 346.93px;
+  left: 474.93px;
+  top: 400.96px;
+  background: #41A5EE;
+  filter: blur(293px);
+  transform: rotate(-92.21deg);
+}
+
+.owl-nav {
+  display: block !important;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  background: #232323 !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px !important;
+  font-size: 40px !important;
+  color: #fff !important;
+  outline: none !important;
+  margin: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+
+  background: #fff !important;
+
+  color: #232323 !important;
+
+}
+
+.owl-prev {
+
+
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.owl-next {
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-stage {
+  display: flex;
+}
+
+.owl-item {
+  height: auto;
+}
+
+.owl-carousel .owl-stage-outer{
+  /* padding-left: 3px; */
+}
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  scroll-snap-align: center;
+  perspective: 500px;
+}
+
+.images-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-shadow1 {
+  position: absolute;
+  width: 500.62px;
+  height: 866.59px;
+  left: 70%;
+  top: 0;
+  background: rgba(65, 165, 238, 0.8);
+  filter: blur(385px);
+  transform: rotate(-14.55deg);
+}
+
+
+.slick-vertical .slick-slide {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.slick-vertical .slick-arrow {
+  display: none !important;
+}
+
+
+
+
+
+.slide-enter {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-exit {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+
+.slide-exit-active {
+  opacity: 0;
+  transform: translateY(-50px);
+}
